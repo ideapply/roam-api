@@ -17,7 +17,7 @@ response=$(curl -X POST "https://api.roamresearch.com/api/graph/$graphName/pull-
 -H "accept: application/json" \
 -H "Authorization: Bearer $token" \
 -H "Content-Type: application/json" \
--d "{\"eids\": \"[[:block/uid \\\"cZre2kzOf\\\"]]\", \"selector\": \"[:block/uid :node/title :block/string {:block/children [:block/uid :block/string]} {:block/refs [:node/title :block/string :block/uid]}]\"}")
+-d "{\"eids\": \"[[:block/uid \\\"08-02-2024\\\"]]\", \"selector\": \"[:block/uid :node/title :block/string {:block/children [:block/uid :block/string]} {:block/refs [:node/title :block/string :block/uid]}]\"}")
 
 # 将响应内容格式化为 EDN 格式，并写入文件
 echo "{:response $response}" > "$outputFile"
