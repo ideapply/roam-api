@@ -67,14 +67,14 @@
     ./roam_api_pull_many.sh
     ```
 
-    该脚本同样用于拉取 Roam Research 中的内容，但作用有限。
+    该脚本同样用于拉取 Roam Research 中的内容。
 
 ## Script Details
 
 - `roam_api.sh`: 将 `roam_api_input.md` 中的 markdown 格式文本转换成 Roam Research 格式文本并上传到当日的 Dailynotes 页。上传后自动删除 markdown 中文本并在 `roam_api_log.txt` 中记录。
 - `watch_note.sh`: 自动检查 `roam_api_input.md` 文件是否被 Typora 编辑，每3分钟触发一次。如果文件未被编辑且内容不为空，自动运行 `roam_api.sh` 脚本上传内容。
 - `roam_api_pull.sh`: 拉取 Roam Research 中的十来行内容。
-- `roam_api_pull_many.sh`: 同样用于拉取 Roam Research 中的内容，但作用有限。
+- `roam_api_pull_many.sh`: 同样用于拉取 Roam Research 中的内容。
 
 ## License
 
